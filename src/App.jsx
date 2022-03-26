@@ -11,12 +11,12 @@ function App() {
   const [weatherState, setWeatherState] = useState([]);
   const [isCelsiusActive, setIsCelsiusActive] = useState(true);
   const [locations, setLocations] = useState([]);
+  const [size, setSize] = useState(window.innerWidth);
 
   const url = "https://www.metaweather.com/api/location/";
 
   const currentLocationWeather = (url) => {
     navigator.geolocation.getCurrentPosition(async (position) => {
-      console.log(position.coords.latitude, position.coords.longitude);
       setIsLoading(true);
       try {
         const response = await fetch(
@@ -29,7 +29,6 @@ function App() {
         );
 
         const weatherInfo = await weatherResponse.json();
-        console.log(weatherInfo);
 
         if (weatherInfo) {
           const { consolidated_weather, title, time } = weatherInfo;
@@ -63,15 +62,26 @@ function App() {
     console.log(weatherInfo);
 
     if (weatherInfo) {
-      const { consolidated_weather, title, time } = weatherInfo;
+      const { cons       olidated_weather, title, time } = weatherInfo;
       setWeatherState({ consolidated_weather, title, time });
     }
     setIsLoading(false);
     setIsSearchActive(false);
   };
 
+  const checkSize = () => {
+    setSize(window.innerWidth);
+  };
+
   useEffect(() => {
     currentLocationWeather(url);
+    return () => {
+      window.removeEventListener("resize", checkSize);
+    };
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", checkSize);
   }, []);
 
   useEffect(() => {}, [isSearchActive]);
@@ -170,11 +180,10 @@ function App() {
       </main>
     );
   }
-  if (isSearchActive) {
+  if (isSearchActive && size > 900) {
     return (
       <main className="app">
         <Aside
-          setIsSearchActive={setIsSearchActive}
           searchForm={searchForm}
           setSearchForm={setSearchForm}
           locationSearch={locationSearch}
@@ -186,6 +195,19 @@ function App() {
           setIsCelsiusActive={setIsCelsiusActive}
           isCelsiusActive={isCelsiusActive}
         ></Weather>
+      </main>
+    );
+  }
+  if (isSearchActive && size <= 900) {
+    return (
+      <main className="app">
+        <Aside
+          searchForm={searchForm}
+          setSearchForm={setSearchForm}
+          locationSearch={locationSearch}
+          locations={locations}
+          locationWeather={locationWeather}
+        ></Aside>
       </main>
     );
   }

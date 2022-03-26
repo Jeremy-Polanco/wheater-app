@@ -400,6 +400,10 @@ button {
   overflow: hidden;
 }
 
+.hide {
+  display: none;
+}
+
 .search-btn-container {
   width: 100%;
   height: 48px;
@@ -555,6 +559,57 @@ button {
     flex-direction: column;
   }
   .aside {
+    height: 810px;
     width: 100%;
+  }
+  .todays-weather {
+    margin-top: 140px;
+  }
+  .aside-info {
+    left: 54%;
+    -webkit-transform: translate(-50%, -53%);
+    transform: translate(-50%, -53%);
+    width: 261px;
+  }
+  .location {
+    width: auto;
+  }
+  .weather-container {
+    width: 100%;
+  }
+  .weather-container .wrapper {
+    padding: 0;
+  }
+  .weather-container .temperature-btn-container {
+    visibility: hidden;
+  }
+  .weather-past {
+    justify-content: center;
+    gap: 26px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    padding: 0;
+  }
+  .today-weather {
+    display: grid;
+    grid-template-columns: repeat(1, 0.8fr);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+  }
+  .search-aside {
+    width: 100%;
+    height: 810px;
+  }
+
+  .search-btn-container {
+    width: 100%;
+    height: 48px;
+    margin-top: 90px;
+    padding: 0;
+  }
+  .search_location {
+    display: inline-block;
+    width: 213px;
   }
 }

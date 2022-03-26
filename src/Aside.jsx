@@ -1,15 +1,12 @@
 import React from "react";
 
 function Aside({
-  setIsSearchActive,
   searchForm,
   setSearchForm,
   locationSearch,
   locations,
   locationWeather,
 }) {
-  console.log(locations);
-
   return (
     <>
       <div className="search-aside">
@@ -42,7 +39,9 @@ function Aside({
               <li
                 className="result"
                 key={index}
-                onClick={() => locationWeather(city.woeid)}
+                onClick={() => {
+                  locationWeather(city.woeid);
+                }}
               >
                 {city.title}
               </li>
