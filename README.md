@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{https://github.com/Jeremy-Polanco/wheater-app}">
+    <a href="https://{github.com/Jeremy-Polanco/wheater-app}">
       Solution
     </a>
     <span> | </span>
