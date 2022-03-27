@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">{Weather app}</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://{https://weather-app-2b3442.netlify.app/}">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://{https://github.com/Jeremy-Polanco/wheater-app}">
       Solution
     </a>
     <span> | </span>
@@ -37,34 +37,51 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://imgur.com/1Tx9Qxh)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
+  You can find the demo at https://weather-app-2b3442.netlify.app/.
 - What was your experience?
+  This proyect is perfect to practice developing web apps using an api, looping through lists, and conditional rendering.
 - What have you learned/improved?
-- Your wisdom? :)
+  I improved my knowledge about api's such as geolocation and metaweather, and also I gained experience in react
+- Your wisdom? 
+  Something that I notice was that if you are using conditional rendering that uses the data you are going to fetch from an api, and you're using useState hook since
+  It's asyncronous you can run into some issues, but you can set and if statement to check when the state has some value.
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [vite](https://vitejs.dev/)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The Weather app (https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv) was to build an application to complete the given user stories.
+
+User story: I can see city weather as default, preferably my current location
+User story: I can search for city
+User story: I can see weather of today and the next 5 days
+User story: I can see the date and location of the weather
+User story: I can see according to image for each type of weather
+User story: I can see the min and max degree each day
+User story: I can see wind status and wind direction
+User story: I can see humidity percentage
+User story: I can see a visibility indicator
+User story: I can see the air pressure number
+User story(optional): I can request my current location weather
+User story(optional): I can convert temperature in Celcius to Fahrenheit and vice versa
 
 ## How To Use
 
 <!-- Example: -->
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) also you will need to install [vite] and [react] modules installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
@@ -84,9 +101,9 @@ $ npm start
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
+- [modzilla](https://developer.mozilla.org/es)
 
 ## Contact
 
 - Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@jeremy-polanco](https://{github.com/your-usermame})
