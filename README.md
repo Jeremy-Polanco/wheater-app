@@ -81,7 +81,10 @@ User story(optional): I can convert temperature in Celcius to Fahrenheit and vic
 
 <!-- Example: -->
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) also you will need to install [vite] and [react] modules installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) also you will need to install [vite] and [react] modules installed on your computer. 
+You'll also need to enable cross-origin requests to anywhere requesting It from https://cors-anywhere.herokuapp.com/
+
+From your command line:
 
 ```bash
 # Clone this repository
