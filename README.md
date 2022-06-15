@@ -1,5 +1,5 @@
 <!-- Please update value in the {}  -->
-#### Note : unfortunately metaweather api is no longer available
+#### Note : unfortunately metaweather API is no longer available
 <h1 align="center">Weather app</h1>
 
 <div align="center">
